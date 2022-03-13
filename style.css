@@ -1,0 +1,91 @@
+/* Common Styles */
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    scroll-behavior: smooth;
+}
+/* End of Common Styles */
+
+/* Navbar */
+.navbar {
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    height: 50px;
+    /*z-index: 2;*/
+    background-color: aquamarine;
+}
+
+.logo {
+    margin: auto 10px;
+    color: black;
+}
+
+.logo i {
+    font-size: xx-large;
+}
+
+.navbar-items {
+    margin: auto 10px;
+    font-size: larger;
+    color: black;
+}
+
+.investor {
+    margin: auto 10px;
+    font-size: larger;
+    color: black;
+}
+
+.social-media {
+    margin: auto 10px;
+    font-size: x-large;
+    color: black;
+}
+
+.language {
+    margin: auto 10px;
+    color: black;
+}
+/* End of Navbar */
+
+/* Section Team Styles */
+.team {
+    width: 100%;
+    height: 100vh;
+    background-color: burlywood;
+}
+/* End of Section Team Styles */
+
+/* Section Projects Styles */
+.projects {
+    width: 100%;
+    height: 100vh;
+    background-color: cadetblue;
+}
+/* End of Section Projects Styles */
+
+/* Section Contact Styles */
+.contact {
+    width: 100%;
+    height: 100vh;
+    background-color: darkcyan;
+}
+/* End of Section Contact Styles */
+
+/* Section Footer Styles */
+.footer {
+    width: 100%;
+    height: 20vh;
+    background-color: black;
+}
+/* End of Section Footer Styles */
