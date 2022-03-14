@@ -11,22 +11,32 @@
 body {
     scroll-behavior: smooth;
 }
+
+.section-heading {
+    text-align: center;
+}
+
+section {
+    padding-top: 10vh; /*70px*/
+}
 /* End of Common Styles */
 
 /* Navbar */
 .navbar {
-    position: fixed;
+    position: sticky;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
     width: 100%;
     height: 50px;
-    /*z-index: 2;*/
-    background-color: aquamarine;
+    background-color: white;
+    /*background-color: transparent;*/
+    top: 0;
+    z-index: 2;
 }
 
 .logo {
-    margin: auto 10px;
+    width: fit-content;
+    margin: auto 20px;
     color: black;
 }
 
@@ -35,28 +45,86 @@ body {
 }
 
 .navbar-items {
-    margin: auto 10px;
-    font-size: larger;
-    color: black;
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+    margin: auto 20px auto auto;
 }
 
-.investor {
-    margin: auto 10px;
+.nav-items {
+    width: fit-content;
+    margin-right: 40px;
+}
+
+.nav-items a {
     font-size: larger;
     color: black;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 40px;
+    margin-left: 40px;
+} 
+
+.investor {
+    font-size: larger;
+    color: black;
+    margin-right: 40px;
 }
 
 .social-media {
-    margin: auto 10px;
-    font-size: x-large;
+    margin-right: 40px;
+}
+
+.social-media a {
+    margin: auto 15px;
+    font-size: larger;
     color: black;
 }
 
 .language {
-    margin: auto 10px;
+    width: fit-content;
     color: black;
 }
 /* End of Navbar */
+
+/* Section MOA Banner */
+.moa-banner {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.img-wrapper {
+    width: 100%;
+    height: 100%;
+}
+
+.img-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.5;
+}
+
+.banner {
+    position: absolute;
+    top: 40vh;
+    right: 10%;
+    left: 10%;
+}
+
+.banner h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100px;
+    text-align: center;
+}
+
+.banner p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: xx-large;
+    text-align: center;
+}
+/* End Section MOA Banner */
 
 /* Section Team Styles */
 .team {
@@ -87,5 +155,19 @@ body {
     width: 100%;
     height: 20vh;
     background-color: black;
+}
+
+.footer-content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.pwd {
+    font-size: larger;
+    color: white;
+    text-align: center;
 }
 /* End of Section Footer Styles */
